@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Buff Central - Movie Streaming Website</title>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#home"><img src="images/logo.png" alt="" /></a>
+      </div>
+      <ul class="nav-list">
+
+        <li><a href="#tv-show" class="nav-link">TV Shows</a></li>
+        <li><a href="#web-series" class="nav-link">Web Series</a></li>
+        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        <button class="btn">SIGN IN</button>
+      </ul>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+  </header>
+
+  <div id="signInModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+    </div>
+  </div>
+
+
+  <section class="hero">
+    <div class="main">
+      <div class="content">
+        <p>Movie Buff Central</p>
+        <h1>Unlimited <strong>Movie</strong>, TVs Shows, & More</h1>
+        <div class="meta-wrapper">
+          <div class="badge">
+            <span>PG 18</span>
+            <span>HD</span>
+          </div>
+          <div class="genre">
+            <span><a href="">Thriller & Action</a></span>
+          </div>
+
+        </div>
+        <div class="watch-btn">
+          <button><i class="fa-solid fa-play"></i> Watch Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="upcoming-movie">
+    <div class="header">
+      <div class="subtitle">
+        <small>online Streaming</small>
+        <h4>Upcoming Movies</h4>
+      </div>
+      <div class="buttons">
+        <button>Movies</button>
+        <button>TV Shows</button>
+        <button>Anime</button>
+      </div>
+    </div>
+    <div class="movie-card">
+      <div class="wrapper">
+        <ul class="movie-carousel">
+          <li class="card">
+            <div class="img">
+              <a href="movie-detail.html"><img src="images/upcoming-1.png" alt="" /></a>
+            </div>
+            <div class="title">
+              <a href="movie-detail.html">
+                <h4>The Northman</h4>
+              </a>
+              <span>2022</span>
+            </div>
+            <div class="footer">
+              <span>HD</span>
+              <div class="time-rating">
+                <span><i class="fa-regular fa-clock"></i> 137 min</span>
+                <span><i class="fa-solid fa-star"></i> 8.5</span>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="img">
+              <a href="movie-detail.html"><img src="images/upcoming-2.png" alt="" /></a>
+            </div>
+            <div class="title">
+              <a href="movie-detail.html">
+                <h4>Doctor Strange</h4>
+              </a>
+              <span>2022</span>
+            </div>
+            <div class="footer">
+              <span>4K</span>
+              <div class="time-rating">
+                <span><i class="fa-regular fa-clock"></i> 126 min</span>
+                <span><i class="fa-solid fa-star"></i> 8.5</span>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="img">
+              <a href="movie-detail.html"><img src="images/upcoming-3.png" alt="" /></a>
+            </div>
+            <div class="title">
+              <a href="movie-detail.html">
+                <h4>Memory</h4>
+              </a>
+              <span>2022</span>
+            </div>
+            <div class="footer">
+              <span>2K</span>
+              <div class="time-rating">
+                <span><i class="fa-regular fa-clock"></i> N/A</span>
+                <span><i class="fa-solid fa-star"></i> 8.5</span>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="img">
+              <a href="movie-detail.html"><img src="images/upcoming-4.png" alt="" /></a>
+            </div>
+            <div class="title">
+              <a href="movie-detail.html">
+                <h4>Unbearable Weight</h4>
+              </a>
+              <span>2022</span>
+            </div>
+            <div class="footer">
+              <span>HD</span>
+              <div class="time-rating">
+                <span><i class="fa-regular fa-clock"></i> 107 min</span>
+                <span><i class="fa-solid fa-star"></i> 8.5</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="service">
+    <div class="main">
+      <div class="img">
+        <img src="images/service-banner.jpg" alt="" />
+      </div>
+      <div class="content">
+        <small>our services</small>
+        <h4>Download Your Shows & Watch Offline.</h4>
+        <p>
+          Connect your device to the internet, open the Google TV app,
+          tap Your stuff, then Library, find the content you want to download,
+          and tap Download.
+        </p>
+        <ul class="list">
+          <li>
+            <div class="service-card">
+              <div class="img">
+                <div class="icon">
+                  <i class="fa-solid fa-tv"></i>
+                </div>
+              </div>
+              <div class="service-content">
+                <h5>Enjoy on Your TV</h5>
+                <p>
+                  Buy or rent a movie or TV show, then download it on an iOS or Android device.
+                  You must be signed in to the YouTube app using the same Google Account used to make the purchase.
+                </p>
+              </div>
+            </div>
+          </li>
+          <hr />
+          <li>
+            <div class="service-card">
+              <div class="img">
+                <div class="icon">
+                  <i class="fa-solid fa-video"></i>
+                </div>
+              </div>
+              <div class="service-content">
+                <h5>Watch Everywhere</h5>
+                <p>
+                  Downloading shows to watch offline allows you to access content
+                  even when you don't have an internet connection.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="trailers">
+    <div class="header">
+      <h2>Latest Movie Trailers</h2>
+    </div>
+    <div class="trailer-grid">
+
+      <div class="trailer">
+        <h3>The Northman</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/oMSdFM12hOw" title="The Northman Trailer"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+
+      <div class="trailer">
+        <h3>Doctor Strange in the Multiverse of Madness</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/aWzlQ2N6qqg" title="Doctor Strange Trailer"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+
+      <div class="trailer">
+        <h3>Star Wars: The Rise of Skywalker</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8Qn_spdM5Zg" title="Star Wars Trailer"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+
+      <div class="trailer">
+        <h3>Avengers: Endgame</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TcMBFSGVi1c"
+          title="Avengers: Endgame Trailer" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+
+      <div class="trailer">
+        <h3>Venom: Let There Be Carnage</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-ezfi6FQ8Ds"
+          title="Venom: Let There Be Carnage Trailer" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+
+      <div class="trailer">
+        <h3>Unbearable Weight of Massive Talent</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/x2YHPZMj8r4"
+          title="Unbearable Weight Trailer" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="top-movie same">
+    <div class="header">
+      <small>online streaming</small>
+      <h4>Top Rated Movies</h4>
+    </div>
+    <div class="top-movie-main">
+      <div class="buttons">
+        <button>movies</button>
+        <button>tv shows</button>
+        <button>documentry</button>
+        <button>sports</button>
+      </div>
+      <div class="movie-card">
+        <ul class="wrapper">
+          <li class="card">
+            <div class="img">
+              <a href="movie-detail.html"><img src="images/movie-1.png" alt="" /></a>
+            </div>
+            <div class="title">
+              <a href="movie-detail.html">
+                <h4>Sonic</h4>
+              </a>
+              <span>2022</span>
+            </div>
+            <div class="footer">
+              <span>2K</span>
+              <div class="time-rating">
+                <span><i class="fa-regular fa-clock"></i> 122 min</span>
+                <span><i class="fa-solid fa-star"></i> 7.8</span>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="img">
+              <a href="movie-detail.html"><img src="images/movie-2.png" alt="" /></a>
+            </div>
+            <div class="title">
+              <a href="movie-detail.html">
+                <h4>Morbius</h4>
+              </a>
+              <span>2022</span>
+            </div>
+            <div class="footer">
+              <span>HD</span>
+              <div class="time-rating">
+                <span><i class="fa-regular fa-clock"></i> 104 min</span>
+                <span><i class="fa-solid fa-star"></i> 5.9</span>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="img">
+              <a href="movie-detail.html"><img src="images/movie-3.png" alt="" /></a>
+            </div>
+            <div class="title">
+              <a href="movie-detail.html">
+                <h4>Adam Project</h4>
+              </a>
+              <span>2022</span>
+            </div>
+            <div class="footer">
+              <span>4K</span>
+              <div class="time-rating">
+                <span><i class="fa-regular fa-clock"></i> 106 min</span>
+                <span><i class="fa-solid fa-star"></i> 7.0</span>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="img">
+              <a href="movie-detail.html"><img src="images/movie-4.png" alt="" /></a>
+            </div>
+            <div class="title">
+              <a href="movie-detail.html">
+                <h4>Free Guy</h4>
+              </a>
+              <span>2022</span>
+            </div>
+            <div class="footer">
+              <span>4K</span>
+              <div class="time-rating">
+                <span><i class="fa-regular fa-clock"></i> 115 min</span>
+                <span><i class="fa-solid fa-star"></i> 7.7</span>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="img">
+              <a href="movie-detail.html"><img src="images/movie-5.png" alt="" /></a>
+            </div>
+            <div class="title">
+              <a href="movie-detail.html">
+                <h4>Batman</h4>
+              </a>
+              <span>2022</span>
+            </div>
+            <div class="footer">
+              <span>4K</span>
+              <div class="time-rating">
+                <span><i class="fa-regular fa-clock"></i> 176 min</span>
+                <span><i class="fa-solid fa-star"></i> 7.9</span>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="img">
+              <a href="movie-detail.html"><img src="images/movie-6.png" alt="" /></a>
+            </div>
+            <div class="title">
+              <a href="movie-detail.html">
+                <h4>Uncharted</h4>
+              </a>
+              <span>2022</span>
+            </div>
+            <div class="footer">
+              <span>HD</span>
+              <div class="time-rating">
+                <span><i class="fa-regular fa-clock"></i> 116 min</span>
+                <span><i class="fa-solid fa-star"></i> 7.0</span>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="img">
+              <a href="movie-detail.html"><img src="images/movie-7.png" alt="" /></a>
+            </div>
+            <div class="title">
+              <a href="movie-detail.html">
+                <h4>Death On..</h4>
+              </a>
+              <span>2022</span>
+            </div>
+            <div class="footer">
+              <span>2K</span>
+              <div class="time-rating">
+                <span><i class="fa-regular fa-clock"></i> 127 min</span>
+                <span><i class="fa-solid fa-star"></i> 6.5</span>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="img">
+              <a href="movie-detail.html"><img src="images/movie-8.png" alt="" /></a>
+            </div>
+            <div class="title">
+              <a href="movie-detail.html">
+                <h4>Kings Man</h4>
+              </a>
+              <span>2022</span>
+            </div>
+            <div class="footer">
+              <span>HD</span>
+              <div class="time-rating">
+                <span><i class="fa-regular fa-clock"></i> 131 min</span>
+                <span><i class="fa-solid fa-star"></i> 7.0</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="tv-series same">
+    <div class="header">
+      <small>best tv series</small>
+      <h4>World Best TV Series</h4>
+    </div>
+    <div class="movie-card">
+      <ul class="wrapper">
+        <li class="card">
+          <div class="img">
+            <a href="movie-detail.html"><img src="images/series-1.png" alt="" /></a>
+          </div>
+          <div class="title">
+            <a href="movie-detail.html">
+              <h4>Moon Knight</h4>
+            </a>
+            <span>2022</span>
+          </div>
+          <div class="footer">
+            <span>2K</span>
+            <div class="time-rating">
+              <span><i class="fa-regular fa-clock"></i> 47 min</span>
+              <span><i class="fa-solid fa-star"></i> 8.6</span>
+            </div>
+          </div>
+        </li>
+        <li class="card">
+          <div class="img">
+            <a href="movie-detail.html"><img src="images/series-2.png" alt="" /></a>
+          </div>
+          <div class="title">
+            <a href="movie-detail.html">
+              <h4>Halo</h4>
+            </a>
+            <span>2022</span>
+          </div>
+          <div class="footer">
+            <span>2K</span>
+            <div class="time-rating">
+              <span><i class="fa-regular fa-clock"></i> 59 min</span>
+              <span><i class="fa-solid fa-star"></i> 8.8</span>
+            </div>
+          </div>
+        </li>
+        <li class="card">
+          <div class="img">
+            <a href="movie-detail.html"><img src="images/series-3.png" alt="" /></a>
+          </div>
+          <div class="title">
+            <a href="movie-detail.html">
+              <h4>Viking valhalla</h4>
+            </a>
+            <span>2022</span>
+          </div>
+          <div class="footer">
+            <span>2K</span>
+            <div class="time-rating">
+              <span><i class="fa-regular fa-clock"></i> 51 min</span>
+              <span><i class="fa-solid fa-star"></i> 8.3</span>
+            </div>
+          </div>
+        </li>
+        <li class="card">
+          <div class="img">
+            <a href="movie-detail.html"><img src="images/series-4.png" alt="" /></a>
+          </div>
+          <div class="title">
+            <a href="movie-detail.html">
+              <h4>Money Heist</h4>
+            </a>
+            <span>2017</span>
+          </div>
+          <div class="footer">
+            <span>4K</span>
+            <div class="time-rating">
+              <span><i class="fa-regular fa-clock"></i> 70 min</span>
+              <span><i class="fa-solid fa-star"></i> 8.3</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="trivia-quiz" class="trivia-section" style="background-color: #1d1a28; padding: 50px;">
+    <div class="container">
+      <h2>Trivia Quiz - Are you a Movie Buff ?</h2>
+      <div id="quiz-container" class="quiz-container">
+        <p id="question" class="quiz-question"></p>
+        <div id="options" class="quiz-options">
+
+        </div>
+        <button id="submit-answer" class="btn" disabled>Submit Answer</button>
+        <p id="quiz-feedback" class="quiz-feedback"></p>
+        <button id="next-question" class="btn" style="display: none;">Next Question</button>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="tv-show" class="tv-show-section" style="background-color: #1d1a28; padding: 50px;">
+    <div class="container">
+      <h2>Top TV Shows</h2>
+      <div class="tv-show-grid">
+        <div class="show-item">
+          <img src="images/breaking_bad.jpg" alt="">
+          <h3>Breaking Bad</h3>
+          <p>An action-packed show about a chemistry teacher turned drug kingpin.</p>
+        </div>
+        <div class="show-item">
+          <img src="images/got.jpg" alt="Game of Thrones">
+          <h3>Game of Thrones</h3>
+          <p>An epic fantasy drama where families fight for control of the Iron Throne.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="web-series" class="web-series-section" style="background-color: #1d1a28; padding: 50px;">
+    <div class="container">
+      <h2>Popular Web Series</h2>
+      <div class="web-series-grid">
+        <div class="series-item">
+          <img src="images/boys.jpg" alt="The Boys">
+          <h3>The Boys</h3>
+          <p>It's the powerless against the super powerful as The Boys embark on a heroic quest to expose the truth
+            about "The Seven," and their formidable Vought backing.</p>
+        </div>
+        <div class="series-item">
+          <img src="images/m_heist.jpg" alt="Money Heist">
+          <h3>Money Heist</h3>
+          <p>A group of criminals planning the biggest heist in history.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="pricing" class="pricing-section" style="background-color: #1d1a28; padding: 50px;">
+    <div class="container">
+      <h2>Our Pricing Plans</h2>
+      <div class="pricing-table">
+        <div class="pricing-item">
+          <h3>Basic Plan</h3>
+          <p>Access to limited movies and TV shows in HD</p>
+          <p class="price">$9.99 / month</p>
+          <a href="#" class="btn">Choose Plan</a>
+        </div>
+        <div class="pricing-item">
+          <h3>Premium Plan</h3>
+          <p>All content in 4K UHD + 3 devices</p>
+          <p class="price">$19.99 / month</p>
+          <a href="#" class="btn">Choose Plan</a>
+        </div>
+        <div class="pricing-item">
+          <h3>Ultimate Plan</h3>
+          <p>Unlimited access to all content + exclusive early releases + 5 devices</p>
+          <p class="price">$29.99 / month</p>
+          <a href="#" class="btn">Choose Plan</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <footer>
+    <div class="main">
+      <div class="footer-top">
+        <nav>
+          <div class="logo">
+            <img src="images/logo.png" alt="">
+          </div>
+
+          <section id="quote-of-the-day" class="quote-section" style="background-color: #1d1a28; padding: 50px;">
+            <div class="container">
+              <h2>Quote of the Day</h2>
+              <p id="quote" class="quote-text"></p>
+            </div>
+          </section>
+
+        </nav>
+        <hr>
+
+
+        <div class="links">
+          <div class="text-links">
+            <a href="">faq</a>
+            <a href="">help center</a>
+            <a href="">terms of use</a>
+            <a href="">privacy</a>
+          </div>
+          <div class="social-links">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-pinterest"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="copyright">
+          <p>&#169; 2024 <a href="">Shiffs</a>. All Rights Reserved</p>
+        </div>
+        <div class="img">
+          <img src="images/footer-bottom-img.png" alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top"><i class="fa-solid fa-chevron-up"></i></button>
+
+  <script src="js/script.js"></script>
+  <script src="js/navbar.js"></script>
+</body>
+</html>
